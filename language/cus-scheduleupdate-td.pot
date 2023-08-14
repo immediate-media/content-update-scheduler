@@ -1,0 +1,38 @@
+# Copyright (C) 2023 Infinitnet
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Content Update Scheduler 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/content-update-scheduler\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-08-10T20:49:29+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: content-update-scheduler\n"
+
+#. Plugin Name of the plugin
+msgid "Content Update Scheduler"
+msgstr ""
+
+#. Description of the plugin
+msgid "Schedule content updates for any page or post type."
+msgstr ""
+
+#. Author of the plugin
+msgid "Infinitnet"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://infinitnet.io/"
+msgstr ""
+
+msgid "Release Date"
+msgstr ""
+
+msgid "Scheduled Content Update"
+msgstr ""
+

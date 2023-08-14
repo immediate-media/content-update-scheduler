@@ -76,7 +76,10 @@ class ContentUpdateScheduler {
 	 * @return void
 	 */
 	private static function load_plugin_textdomain() {
-		load_plugin_textdomain( 'cus-scheduleupdate-td', false, dirname( plugin_basename( __FILE__ ) ) . '/language/' );
+		load_textdomain(
+            'cus-scheduleupdate-td',
+            \plugin_dir_path(__FILE__) . 'language/cus-scheduleupdate-td-' . get_user_locale() . '.mo'
+        );
 	}
 
 	/**
@@ -139,7 +142,11 @@ class ContentUpdateScheduler {
 			'show_in_admin_all_list'    => true,
 			'show_in_admin_status_list' => true,
 			// translators: number of posts.
-			'label_count'               => _n_noop( 'Scheduled Content Update <span class="count">(%s)</span>', 'Scheduled Content Update <span class="count">(%s)</span>', 'cus-scheduleupdate-td' ),
+			'label_count'               => _n_noop(
+                __( 'Scheduled Content Update', 'cus-scheduleupdate-td' ) . ' <span class="count">(%s)</span>',
+                __( 'Scheduled Content Update', 'cus-scheduleupdate-td' ) . ' <span class="count">(%s)</span>',
+                'cus-scheduleupdate-td'
+            ),
 		);
 
 		register_post_status( self::$_cus_publish_status, $args );
